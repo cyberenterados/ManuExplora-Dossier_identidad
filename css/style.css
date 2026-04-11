@@ -156,3 +156,81 @@ body {
     .nav-content { flex-direction: column; }
     .nav-content ul { margin-top: 15px; flex-wrap: wrap; justify-content: center; }
 }
+
+/* ================= RESPONSIVE: MODO TERMINAL PORTÁTIL ================= */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column; /* Apila Logo, Links y Redes verticalmente */
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    #links {
+        flex-direction: column; /* Formación en columnas solicitada */
+        align-items: flex-start; /* Alineación a la izquierda estilo terminal */
+        width: 100%;
+        gap: 8px; /* Espaciado ajustado para modo compacto */
+        padding-left: 20px;
+    }
+
+    #links li a {
+        font-size: 18px; /* Tamaño de etiqueta reducido para móviles */
+        letter-spacing: 1px;
+    }
+
+    .redes-radar {
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid var(--verde-oscuro);
+        padding-top: 10px;
+    }
+    
+    .logo {
+        font-size: 22px; /* Logo ligeramente más pequeño en móvil */
+    }
+}
+
+@media (max-width: 768px) {
+    /* AJUSTE DEL CONTENEDOR HERO */
+    .bunker-hero {
+        height: 90vh; /* Aumentamos un poco el visor para que el texto respire */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .hero-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* Crea espacio de seguridad entre los elementos */
+    }
+
+    #maquina-escribir {
+        font-size: 32px; /* Reducimos el calibre de la fuente para que no desborde */
+        line-height: 1.2;
+        min-height: 100px; /* Reservamos espacio para que el scroll no salte al escribir */
+    }
+
+    /* OCULTAR EL BOTÓN INVASIVO EN MÓVILES */
+    .btn-terminal {
+        display: none !important;
+    }
+
+    /* INYECCIÓN DE IDENTIFICADOR DE SCROLL (EL REEMPLAZO) */
+    .hero-texto::after {
+        content: "[ SCROLL_PARA_DESCIFRAR_DATOS ]";
+        font-size: 16px;
+        color: var(--verde-fósforo);
+        opacity: 0.6;
+        margin-top: 40px;
+        letter-spacing: 2px;
+        animation: blink-hacker 1.5s infinite; /* Invitación visual al scroll */
+    }
+}
+
+/* ANIMACIÓN DE SEÑAL DE RADAR */
+@keyframes blink-hacker {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+}
