@@ -1,0 +1,95 @@
+<!-- comienza fila -->
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitio Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Blanditiis incidunt neque, dolorum rem nemo commodi modi 
+                    optio vel ratione sint officiis maxime fugiat animi nostrum.</p>
+            </div>
+            <!-- aca divide servicios -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitio Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Blanditiis incidunt neque, dolorum rem nemo commodi modi 
+                    optio vel ratione sint officiis maxime fugiat animi nostrum.</p>
+            </div>
+            <!-- aca divide servicios -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitio Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Blanditiis incidunt neque, dolorum rem nemo commodi modi 
+                    optio vel ratione sint officiis maxime fugiat animi nostrum.</p>
+            </div>
+        </div>
+        <!-- aca divide la fila -->
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitio Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Blanditiis incidunt neque, dolorum rem nemo commodi modi 
+                    optio vel ratione sint officiis maxime fugiat animi nostrum.</p>
+            </div>
+            <!-- aca divide servicios -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitio Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Blanditiis incidunt neque, dolorum rem nemo commodi modi 
+                    optio vel ratione sint officiis maxime fugiat animi nostrum.</p>
+            </div>
+            <!-- aca divide servicios  -->
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitio Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Blanditiis incidunt neque, dolorum rem nemo commodi modi 
+                    optio vel ratione sint officiis maxime fugiat animi nostrum.</p>
+            </div>
+        </div>
+        <!-- termina fila  -->
+
+
+        https://v.ftcdn.net/04/99/39/37/700_F_499393710_OaLnIssV8eBTYr64hYKjSbYtscgTCFUS_NW.mp4?token=1719796787_6s2JdJK4rlJjJqfsT0EqYdURjno7Nae03UhkRrxmHW8
+
+
+        https://images.pexels.com/photos/2301177/pexels-photo-2301177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1

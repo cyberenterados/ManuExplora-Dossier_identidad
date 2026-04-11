@@ -1,0 +1,158 @@
+:root {
+    --verde-fósforo: #00FF00;
+    --verde-oscuro: #003300;
+    --fondo-bunker: #050505;
+    --fallout-ambar: #FFB000;
+    --brillo-hacker: 0 0 5px var(--verde-fósforo), 0 0 10px var(--verde-oscuro);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace; /* Letra de terminal */
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--fondo-bunker);
+    color: var(--verde-fósforo);
+    overflow-x: hidden;
+}
+
+/* EFECTO DE PANTALLA CRT GLOBAL */
+.crt-screen::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 999;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none; /* Permite hacer clic a través del efecto */
+}
+
+/* NAVEGACIÓN */
+.hacker-nav {
+    border-bottom: 2px solid var(--verde-fósforo);
+    background: rgba(5, 5, 5, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+.nav-content {
+    max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;
+}
+.nav-content h1 { text-shadow: var(--brillo-hacker); font-size: 28px; }
+.nav-content ul { display: flex; list-style: none; gap: 20px; }
+.nav-content a { color: var(--verde-fósforo); text-decoration: none; font-size: 22px; transition: 0.2s; }
+.nav-content a:hover { background: var(--verde-fósforo); color: var(--fondo-bunker); }
+
+/* CONTENEDORES GENERALES */
+.container { max-width: 1100px; margin: 60px auto; padding: 20px; border: 1px dashed var(--verde-oscuro); }
+.glitch-title { font-size: 40px; margin-bottom: 20px; border-bottom: 2px solid var(--verde-fósforo); display: inline-block; }
+
+/* INICIO / HERO */
+.bunker-hero { height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.bunker-hero h2 { font-size: 60px; text-shadow: var(--brillo-hacker); margin: 20px 0; height: 70px; }
+.sys-msg { font-size: 24px; color: #55ff55; opacity: 0.8; }
+
+.btn-terminal {
+    display: inline-block; padding: 10px 20px; margin-top: 20px;
+    border: 2px solid var(--verde-fósforo); color: var(--verde-fósforo);
+    text-decoration: none; font-size: 24px; background: transparent; cursor: pointer;
+}
+.btn-terminal:hover { background: var(--verde-fósforo); color: var(--fondo-bunker); }
+
+/* SECCIÓN SOBRE MÍ */
+.grid-2-col { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start; }
+.avatar-container { position: relative; border: 2px solid var(--verde-fósforo); padding: 10px; }
+.radar-img { width: 100%; filter: grayscale(100%) sepia(100%) hue-rotate(70deg) contrast(1.5); }
+.bio-data p { font-size: 22px; line-height: 1.4; margin-bottom: 15px; }
+
+/* ESTILOS PARA EL EXPEDIENTE DE IDENTIDAD */
+.id-tag-datos {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--verde-oscuro); /* Línea táctica de separación */
+    text-align: left;
+}
+
+.id-tag-datos p {
+    font-size: 16px; /* Letra pequeña pero legible en VT323 */
+    line-height: 1.2;
+    margin-bottom: 3px;
+    color: var(--verde-fósforo);
+    opacity: 0.8; /* Efecto de texto secundario */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.id-tag-datos p:first-child {
+    font-weight: bold;
+    color: #55ff55; /* Resalte para el encabezado del ID */
+    margin-bottom: 8px;
+    opacity: 1;
+}
+
+/* SECCIÓN FALLOUT (VIDEOS YOUTUBE) */
+.fallout-ui {
+    background-color: #0a0a00; border: 3px solid var(--fallout-ambar);
+    color: var(--fallout-ambar); box-shadow: inset 0 0 20px #221100;
+}
+.fallout-ui * { color: var(--fallout-ambar); border-color: var(--fallout-ambar); }
+.fallout-header { margin-bottom: 20px; font-size: 24px; }
+.carousel-controles { display: flex; justify-content: space-between; margin-bottom: 15px; }
+.btn-fallout { background: transparent; border: 2px solid var(--fallout-ambar); padding: 5px 15px; font-size: 20px; cursor: pointer; }
+.btn-fallout:hover { background: var(--fallout-ambar); color: #0a0a00; }
+
+.video-section { display: flex; overflow-x: hidden; gap: 20px; padding-bottom: 10px; }
+.video-card { min-width: 350px; border: 2px solid var(--fallout-ambar); position: relative; }
+.video-card iframe { width: 100%; height: 200px; filter: grayscale(100%) sepia(100%) hue-rotate(10deg) contrast(1.2); }
+
+/* SECCIÓN PROYECTOS (MODULAR) */
+.proyectos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
+.proyecto-card { 
+    border: 1px solid var(--verde-fósforo); 
+    background: #001100; 
+    transition: 0.3s; 
+    text-decoration: none; 
+    display: block; 
+    color: var(--verde-fósforo); /* Fuerza el verde en la tarjeta principal */
+}
+.proyecto-card:hover { box-shadow: var(--brillo-hacker); transform: translateY(-5px); }
+.proyecto-img-wrapper { position: relative; overflow: hidden; height: 180px; }
+.proyecto-img-wrapper img { width: 100%; filter: grayscale(100%) sepia(100%) hue-rotate(70deg); }
+.overlay-hacker { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,255,0,0.8); color: black; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; opacity: 0; transition: 0.3s; }
+.proyecto-card:hover .overlay-hacker { opacity: 1; }
+.proyecto-info { padding: 15px; }
+.proyecto-info h4 { 
+    font-size: 26px; 
+    color: var(--verde-fósforo); /* Inyección letal de verde fósforo */
+}
+.proyecto-info p { 
+    font-size: 20px; 
+    opacity: 0.8; 
+    color: var(--verde-fósforo); /* Inyección letal de verde fósforo */
+}
+
+.proyecto-card { 
+    border: 1px solid var(--verde-fósforo); 
+    background: #001100; 
+    transition: 0.3s; 
+    /* INYECCIÓN PARA BLINDAR EL ENLACE */
+    text-decoration: none; 
+    display: block; 
+}
+
+/* FOOTER */
+.terminal-footer { text-align: center; padding: 40px; border-top: 2px solid var(--verde-fósforo); margin-top: 50px; }
+
+/* RESPONSIVE BÁSICO */
+@media (max-width: 768px) {
+    .grid-2-col { grid-template-columns: 1fr; }
+    .nav-content { flex-direction: column; }
+    .nav-content ul { margin-top: 15px; flex-wrap: wrap; justify-content: center; }
+}
