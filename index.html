@@ -55,33 +55,65 @@
     </script>
 </head>
 <body class="crt-screen">
-    
+
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- NAVEGACIÓN DESKTOP -->
     <nav class="hacker-nav">
         <div class="nav-content">
-            <h1 class="logo">[ MG_OS v2.0 ]</h1>
+            <h1 class="logo">[ MG_OS v2.1 ]</h1>
+
+            <!-- Links desktop -->
             <ul id="links">
                 <li><a href="#inicio">>> INICIO</a></li>
                 <li><a href="#sobremi">>> ARCHIVO_PERSONAL</a></li>
                 <li><a href="#servicios">>> TRANSMISIONES</a></li>
                 <li><a href="#portafolio">>> OPERACIONES</a></li>
             </ul>
+
+            <!-- Redes desktop -->
             <div class="redes-radar">
-                <a href="https://www.youtube.com/@manuexplora1136" target="_blank" rel="noopener noreferrer" aria-label="Acceder al Canal de YouTube de ManuExplora">
+                <a href="https://www.youtube.com/@manuexplora1136" target="_blank" rel="noopener noreferrer" aria-label="Canal de YouTube">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="https://www.tiktok.com/@manuexplora" target="_blank" rel="noopener noreferrer" aria-label="Seguir transmisiones en TikTok">
+                <a href="https://www.tiktok.com/@manuexplora" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
-                <a href="https://www.facebook.com/manuxplora?locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Conectar con la base de Facebook">
+                <a href="https://www.facebook.com/manuxplora?locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/manuexplora/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Visualizar archivo de inteligencia en Instagram">
+                <a href="https://www.instagram.com/manuexplora/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
+
+            <!-- Botón hamburguesa (solo mobile) -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- PANEL MENÚ MÓVIL -->
+    <div class="nav-mobile-panel" id="nav-mobile-panel">
+        <ul>
+            <li><a href="#inicio">>> INICIO</a></li>
+            <li><a href="#sobremi">>> ARCHIVO_PERSONAL</a></li>
+            <li><a href="#servicios">>> TRANSMISIONES</a></li>
+            <li><a href="#portafolio">>> OPERACIONES</a></li>
+        </ul>
+        <div class="redes-mobile">
+            <a href="https://www.youtube.com/@manuexplora1136" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@manuexplora" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/manuxplora?locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/manuexplora/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- INICIO / HERO -->
     <section id="inicio" class="bunker-hero">
         <div class="hero-texto">
             <p class="sys-msg">Iniciando protocolo de conexión...</p>
@@ -90,6 +122,7 @@
         </div>
     </section>
 
+    <!-- SOBRE MÍ -->
     <section id="sobremi" class="container">
         <h3 class="glitch-title" data-text="IDENTIDAD: MANUEXPLORA">IDENTIDAD: MANUEXPLORA</h3>
         <div class="grid-2-col">
@@ -97,18 +130,17 @@
                 <img src="img/img-6.jpeg" alt="Comandante ManuExplora" class="radar-img">
                 <div class="scanline"></div>
                 <div class="id-tag-datos">
-                <p>[ IDENTIFICACIÓN_DE_SUJETO ]</p>
-                <p>> NOMBRE: MANUEL [REDACTADO]</p>
-                <p>> NACIMIENTO: MARACAIBO, EDO. ZULIA, VENEZUELA</p>
-                <p>> BASE_ACTUAL: BUENOS AIRES, ARGENTINA</p>
-                <p>> ACTIVIDAD: PERIODISMO_INVESTIGACIÓN</p>
-                <p>> ESTADO: OPERATIVO // EN_LÍNEA</p>
-            </div>
+                    <p>[ IDENTIFICACIÓN_DE_SUJETO ]</p>
+                    <p>> NOMBRE: MANUEL </p>
+                    <p>> NACIMIENTO: MARACAIBO </p>
+                    <p>> BASE_ACTUAL: BUENOS AIRES </p>
+                    <p>> ACTIVIDAD: PERIODISMO </p>
+                    <p>> ESTADO: OPERATIVO </p>
+                </div>
             </div>
             <div class="bio-data">
-                <p>>_ <strong>RANGO ACTUAL:</strong> Comandante / Ingeniero Full-Stack / Estratega en Comunicación</p>
+                <p>>_ <strong>RANGO ACTUAL:</strong> Comandante / Desarrollador Full-Stack / Estratega en Comunicación</p>
                 <br>
-                
                 <p>>_ <strong>ORIGEN Y DESPLIEGUE INICIAL:</strong><br>
                 Nacido y forjado en Maracaibo, Venezuela, operó en su sector de origen hasta los 28 años. En un movimiento táctico decisivo, migró a la base de Buenos Aires, Argentina, donde ha mantenido su posición operativa durante los últimos 9 años. Tras una década de despliegues en diversos sectores para asegurar la logística y subsistencia, enfrentó las zonas más oscuras de la desmotivación y el silencio de los radares laborales.</p>
 
@@ -128,6 +160,7 @@
         </div>
     </section>
 
+    <!-- TRANSMISIONES / VIDEOS -->
     <section id="servicios" class="container fallout-ui">
         <div class="fallout-header">
             <h3>INDUSTRIES UNIFIED OPERATING SYSTEM</h3>
@@ -181,38 +214,154 @@
         </div>
     </section>
 
+    <!-- PORTAFOLIO / OPERACIONES -->
     <section id="portafolio" class="container">
         <h3 class="glitch-title" data-text="REGISTRO DE OPERACIONES">REGISTRO DE OPERACIONES</h3>
         <p class="sys-msg">> Directorio de despliegues confirmados:</p>
         
         <div class="proyectos-grid">
-            <a href="TU_ENLACE_AQUI_GITHUB_O_WEB" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+
+            <!-- CyberEnterados News VERSION ACTUAL -->
+            <a href="https://CyberEnterados.com.ar" target="_blank" rel="noopener noreferrer" class="proyecto-card">
                 <div class="proyecto-img-wrapper">
-                    <img src="img/cyberenteradosnews-portada.JPG" alt="CyberEnterados">
+                    <img src="img/cyberCEN.PNG" alt="CyberEnterados News">
                     <div class="overlay-hacker">ACCESO CONCEDIDO</div>
                 </div>
-                    <div class="proyecto-info">
-                        <h4>> CyberEnterados News</h4>
-                        <p>Sistema Central de Noticias</p>
-                    </div>
+                <div class="proyecto-info">
+                    <h4>> CyberEnterados</h4>
+                    <p>CyberEnterados News VERSION ACTUAL</p>
+                </div>
             </a>
-            <a href="TU_ENLACE_AQUI_GITHUB_O_WEB" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+
+            <!-- CyberEnterados - Intel-Station -->
+            <a href="https://fuentes-noticias-proyect.vercel.app/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
                 <div class="proyecto-img-wrapper">
-                    <img src="img/cyberenteradosnews-portada.JPG" alt="CyberEnterados">
+                    <img src="img/front-website.png" alt="Soptec">
                     <div class="overlay-hacker">ACCESO CONCEDIDO</div>
                 </div>
-                    <div class="proyecto-info">
-                        <h4>>_ CyberEnterados News</h4>
-                        <p>Sistema Central de Noticias</p>
-                    </div>
+                <div class="proyecto-info">
+                    <h4>>_ Intel-Station</h4>
+                    <p>Herramienta de Noticias</p>
+                    <p>Analisis de datos</p>
+                </div>
             </a>
+
+            <!-- PORTAFOLIO => CyberEnterados News -->
+            <a href="https://cyberenterados.github.io/ManuExplora-Dossier_identidad/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/man-dev.PNG" alt="CyberEnterados News">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>>_ Identidad</h4>
+                    <p>PORTAFOLIO => CyberEnterados News</p>
+                </div>
+            </a>
+
+            <!-- CyberEnterados News PRIMERA VERSION -->
+            <a href="https://cyberenterados.github.io/CyberEnterados-News/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/cyberenteradosnews-portada.JPG" alt="CyberEnterados News">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>> CyberEnterados News</h4>
+                    <p>CyberEnterados News PRIMERA VERSION</p>
+                </div>
+            </a>
+
+            <!-- PORTAFOLIO - DEV -->
+            <a href="https://cyberenterados.github.io/portafolio-alejanpublic-dev/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/portafolio.PNG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>PROTAFOLIO - DEV</h4>
+                    <p>DESARROLLADOR WEB - version cv</p>
+                </div>
+            </a>
+
+            <!-- kuantico -->
+            <a href="https://cyberenterados.github.io/kuantico/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/kuantum.PNG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>Almacen - DEV</h4>
+                    <p>WEB_SITE</p>
+                </div>
+            </a>
+
+            <!-- latam-motorsport -->
+            <a href="https://cyberenterados.github.io/latam-motorsport/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/latam.PNG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>Gaming - DEV</h4>
+                    <p>latam-motorsport</p>
+                </div>
+            </a>
+
+            <!-- ManuExplora PRIMERA VERSION -->
+            <a href="https://cyberenterados.github.io/ManuExplora/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/ME-1v.PNG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>ManuExplora - Creador de Contenido</h4>
+                    <p>ManuExplora PRIMERA VERSION</p>
+                </div>
+            </a>
+
+            <!-- EurekaCosmoTechNews  -->
+            <a href="https://cyberenterados.github.io/EurekaCosmoTechNews/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/EUK.PNG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>EurekaCosmoTechNews </h4>
+                    <p>EurekaCosmoTechNews PRIMERAS IDEAS DE WEBSITE DE NOTICIAS</p>
+                </div>
+            </a>
+
+            <!-- /SteelFire9239  -->
+            <a href="https://cyberenterados.github.io/SteelFire9239/" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/steelfire.PNG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>EurekaCosmoTechNews </h4>
+                    <p>EurekaCosmoTechNews PRIMERAS IDEAS DE WEBSITE DE NOTICIAS</p>
+                </div>
+            </a>
+
+            <!--ACA PARA AGREGAR PROYECTO-->
+
+            <!-- CyberEnterados News PRIMERA VERSION -->
+            <!--<a href="TU_ENLACE_AQUI_GITHUB_O_WEB" target="_blank" rel="noopener noreferrer" class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/soptec-portada.JPG" alt="Soptec">
+                    <div class="overlay-hacker">ACCESO CONCEDIDO</div>
+                </div>
+                <div class="proyecto-info">
+                    <h4>>_ Soptec</h4>
+                    <p>Operación en Desarrollo</p>
+                </div>
+            </a>-->
         </div>
     </section>
 
     <footer class="terminal-footer">
-        <p>>_ TODOS LOS DERECHOS RESERVADOS... <br> >_ (C) 2026 MANUEXPLORA - BASE BUENOS AIRES</p>
+        <p>>_ TODOS LOS DERECHOS RESERVADOS...<br>>_ (C) 2026 MANUEXPLORA - BASE BUENOS AIRES</p>
     </footer>
 
-    <script src="javscript/main.js"></script>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
